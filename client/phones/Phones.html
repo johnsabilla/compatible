@@ -1,0 +1,17 @@
+<template name="Phones">
+	<div class="section site-content">
+		<div class="row">
+			<div class="col s1">
+				<a data-target="modal1" class="btn-floating btn-large waves-effect waves-light red new-phone modal-trigger"><i class="material-icons">add</i></a>
+			</div>
+			<div class="col s11">
+				{{> Search }}
+			</div>
+		</div>
+	</div>
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+    	{{> NewPhone}}
+    </div>
+  </div>
+</template>

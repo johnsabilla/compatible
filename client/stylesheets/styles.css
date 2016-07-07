@@ -1,0 +1,10 @@
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.site-content {
+  flex: 1;
+}

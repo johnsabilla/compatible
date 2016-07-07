@@ -1,0 +1,21 @@
+<template name="Search">
+	<div class="section">
+    {{> EasySearch.Input index=phonesIndex noDocumentsOnEmpty=false}}
+
+	<div class="section">
+		<div class="col s8 offset-s4">
+			{{#EasySearch.Each index=phonesIndex}}
+				<ul>
+					{{> Phone}}
+				</ul>
+			{{/EasySearch.Each}}
+		</div>
+	</div>
+
+  {{> EasySearch.LoadMore index=phonesIndex}}
+
+  {{#EasySearch.IfNoResults index=phonesIndex}}
+    <div class="no-results">No results found!</div>
+  {{/EasySearch.IfNoResults}}
+  </div>
+</template>
